@@ -1,0 +1,110 @@
+.header{
+    width: 100%;
+    height: 750px;
+    background: linear-gradient(150deg,rgba(56, 54, 56, 1), rgba(11, 11, 11, 1));
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+}
+.navbar{
+    max-width: 1250px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+.navbar li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    opacity: 0.4;
+    cursor: pointer;
+    position: relative;
+}
+.navbar li::before {
+    content: "";
+    width: 0;
+    height: 1px;
+    background: rgb(247, 247, 247);
+    position: absolute;
+    transition: 0.3s;
+    bottom: -4px;
+    left: 0;
+  }
+.navbar li:hover::before {
+    width: 100%;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.icons div{
+    cursor: pointer;
+}
+.discover{
+    width: 80%;
+    max-width: 1250px;
+    padding-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.title h2{
+    font-size: 50px;
+    font-weight: 700;
+    cursor: default;
+}
+.title p{
+    color: rgba(139, 142, 153, 1);
+    cursor: default;
+}
+.inp{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 50%;
+}
+.inp input{
+    width: 700px;
+    height: 50px;
+    padding-left: 10px;
+    border-radius: 10px;
+    display: flex;
+}
+.inp button{
+    width: 80px;
+    height: 35px;
+    position: absolute;
+    justify-content: end;
+    align-items: end;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(56, 88, 214, 1);
+    color: white;
+    font-size: 100%;
+    font-weight: 600;
+    cursor: pointer;
+}

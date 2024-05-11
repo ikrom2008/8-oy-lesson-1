@@ -1,0 +1,186 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+.products{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding-bottom: 100px;
+}
+.fow{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.fow h3{
+    font-size: 30px;
+}
+.fow p{
+    color: rgba(56, 88, 214, 1);
+    font-weight: 500;
+}
+.lists{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.list img{
+    width: 220px;
+    height: 220px;
+}
+.list{
+    /* width: 33%; */
+    width: 280px;
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    gap: 10px;
+    border-radius: 10px;
+}
+.likebtn{
+    display: none;
+    position: absolute;
+    
+}
+.likebtn button{
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.her{
+    background-color: rgba(255, 107, 107, 1);
+}
+.cart{
+    background-color: rgba(56, 88, 214, 1);
+}
+.likebtn{
+    position: absolute;
+    width: 0px;
+    display: none;
+    flex-direction: column;
+    display: none;
+    flex-direction: column;
+    margin-top: -200px;
+    margin-left: 200px;
+
+}
+.likeact{
+    display: flex;
+    width: 80%;
+    height: 65%;
+    justify-content: end;
+}
+.list:hover{
+    .likebtn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+}
+.list:hover{
+    transition: 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.list img:hover{
+    width: 240px;
+    height: 240px;
+    
+    transition: 0.3s;
+}
+.list p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    span{
+        text-decoration: line-through;
+        opacity: 0.6;
+        font-size: 16px;
+    }
+}
+.view{
+    width: 150px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(56, 88, 214, 1);
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+}
+.about{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+.users{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.user{
+    width: 45%;
+    height: 220px;
+    background-color: rgba(246, 246, 246, 1);
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.user img{
+    width: 170px;
+}
+.userinfo h4{
+    font-size: 20px;
+}
+.imgdots{
+    width: 150px;
+}
+.newbrand{
+    width: 80%;
+    height: 350px;
+    background: rgba(246, 246, 246, 1);
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.brandinfo h3{
+    font-size: 30px;
+    
+}
+.brandinfo{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.inp input{
+    border: none;
+}

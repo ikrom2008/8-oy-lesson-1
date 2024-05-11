@@ -1,0 +1,63 @@
+.srchbar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    height: 100px;
+    z-index: 9999999;
+    padding: 0 10%;
+    color: black;
+    padding-top: 30px;
+}
+.logos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logos input{
+    width: 500px;
+    height: 35px;
+    border-radius: 15px;
+    border: none;
+    background-color: rgb(236, 236, 236);
+    padding-left: 20px;
+    font-size: 20px;
+}
+.searched{
+    left: 33%;
+    position: absolute;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    padding-left: 10px;
+    background-color: white;
+    max-height: 300px;
+    overflow: auto;
+    top: 100%;
+    flex: 1;
+    border-radius: 0 0 5px 10px;
+}
+.srchitem{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+.srchitem li{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    gap: 10px;
+}
+.srchbar button{
+    width: 70px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    background: rgb(255, 89, 89);
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+}
