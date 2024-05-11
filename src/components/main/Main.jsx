@@ -1,24 +1,11 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import './Main.css'
 import { Rating } from '@mui/material'
 import { FaCartShopping } from 'react-icons/fa6'
 import { FaHeart } from 'react-icons/fa'
-let url = 'https://fakestoreapi.com/products/'
-function Main() {
-    const [product,setProduct] = useState([])
-    const [slice,setSlice] = useState(false)
-  const fetchdata = async () =>{
-    try {
-      const resp = await fetch(url)
-      const data = await resp.json()
-      setProduct(data)
-    } catch (error) {
-      console.log(error)
-    }
-  }
-  useEffect(() => {
-    fetchdata()
-  },[])
+function Main({product}) {
+  const [slice,setSlice] = useState(false)
+
   let prs = product?.map((item) => (
     <li key={item.id} className='list'>
         <img src={item.image} alt="" />
