@@ -11,8 +11,8 @@ function Searched({newpr}) {
     <div className='searched'>
         <ul className='srchitem'>
            {
-        news
-      } 
+            news.length > 0 ? news : <li className='noitem'>Malumot topilmadi!!!</li>
+           }
         </ul>
       
     </div>
